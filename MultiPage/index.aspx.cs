@@ -11,7 +11,14 @@ namespace MultiPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(DateTime.Now.Hour < 12)
+            {
+                LblWelcome.Text = "🌞Good Morning!!!";
+            }
+            else
+            {
+                LblWelcome.Text = "😴Good Night!!!";
+            }
         }
     }
 }
